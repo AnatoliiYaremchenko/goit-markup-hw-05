@@ -179,7 +179,7 @@ img {
   fill: var(--main-text-color);
 
   transition-property: color, fill;
-  transition-duration: 5250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
