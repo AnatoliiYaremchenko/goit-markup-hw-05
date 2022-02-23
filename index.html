@@ -61,7 +61,9 @@
       <section class="section hero">
         <div class="conteiner">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="order">Заказать услугу</button>
+          <button type="button" class="order" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- Наши преимущества -->
@@ -132,6 +134,7 @@
                 width="370"
                 height="294"
               />
+              <p class="text">Десктопные приложения</p>
             </li>
             <li class="item">
               <img
@@ -140,6 +143,7 @@
                 width="370"
                 height="294"
               />
+              <p class="text">Мобильные приложения</p>
             </li>
             <li class="item">
               <img
@@ -148,6 +152,7 @@
                 width="370"
                 height="294"
               />
+              <p class="text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -339,14 +344,14 @@
           <ul class="clients-list">
             <li class="item">
               <a href="" class="link">
-                <svg class="icon" width="41" height="46.7">
+                <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-ya-and-co"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
               <a href="" class="link">
-                <svg class="icon" width="40" height="52">
+                <svg class="icon" width="106" height="60">
                   <use
                     href="./images/icons.svg#icon-company-tagline-here"
                   ></use>
@@ -355,28 +360,28 @@
             </li>
             <li class="item">
               <a href="" class="link">
-                <svg class="icon" width="43.46" height="41.18">
+                <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-company"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
               <a href="" class="link">
-                <svg class="icon" width="84.44" height="40.62">
+                <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-foster-peters"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
               <a href="" class="link">
-                <svg class="icon" width="62.54" height="42.43">
+                <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-brand"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
               <a href="" class="link">
-                <svg class="icon" width="93.79" height="43.93">
+                <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-company-tagline"></use>
                 </svg>
               </a>
@@ -448,5 +453,17 @@
         </div>
       </div>
     </footer>
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p></p>
+        <button type="button" class="modal-batton" data-modal-close>
+          <svg class="icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
